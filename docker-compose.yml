@@ -1,0 +1,9 @@
+version: '2.0'
+services:
+  openapi:
+    image: openapitools/openapi-generator-online
+    ports:
+      # HOST:CONTAINER
+      - "8070:8080"
+    environment:
+      - GENERATOR_HOST=http://localhost
